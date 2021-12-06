@@ -1,0 +1,12 @@
+body{
+    background-color: darkkhaki;
+}
+table th{
+    padding: 30px;
+    background-color:rgb(150, 199, 150);
+
+}
+td{
+    padding: 30px;
+    background-color:rgb(73, 126, 73);
+}

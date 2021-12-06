@@ -1,0 +1,26 @@
+<h1>Edit workers</h1>
+
+<form action="{{ url_for( 'edit', id=emp.ID)}}" method="POST">
+
+    <input type="text" name="fname" value="{{emp.fname}}" placeholder="First name">
+    <br><br>
+    <input type="text" name="mname" value="{{emp.mname}}" placeholder="Middle name">
+    <br><br>
+    <input type="text" name="lname" value="{{emp.fname}}" placeholder="Last name">
+    <br><br>
+    <input type="text" name="address" value="{{emp.address}}" placeholder="Address">
+    <br><br>
+    <input type="text" name="state" value="{{emp.fname}}" placeholder="State">
+    <br><br>
+    <input type="number" name="phone" value="{{emp.phone}}" placeholder="Phone">
+    <br><br>
+    <input type="text" name="emeil" value="{{emp.emeil}}" placeholder="Emeil">
+    <br><br>
+    <input type="number" name="age" value="{{emp.age}}" placeholder="Age">
+    <br><br>
+    <textarea name="y_work" value="{{emp.y_work}}" placeholder="Experieance" cols="50" rows="20"></textarea>
+    <br><br>
+
+    <input type="submit" value="submit">
+
+</form>

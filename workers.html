@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="../static/workers.css">
+</head>
+
+<br>
+<br><br><br>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Middle name</th>
+        <th>Last name</th>
+        <th>Address</th>
+        <th>State</th>
+        <th>Phone no</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Experiance</th>
+    </tr>
+
+    {% for cro in emp %}
+    <tr>
+        <td>{{cro.fname}}</td>
+        <td>{{cro.mname}}</td>
+        <td>{{cro.lname}}</td>
+        <td>{{cro.address}}</td>
+        <td>{{cro.state}}</td>
+        <td>{{cro.phone}}</td>
+        <td>{{cro.emeil}}</td>
+        <td>{{cro.age}}</td>
+        <td>{{cro.time}}</td>
+        <td>{{cro.y_work}}</td>
+
+        <td><a href="{{ url_for( 'edit', id=cro.ID)}}">Edit</a></td>
+        <td><a href="{{ url_for( 'delete', id=cro.ID)}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+
+
+</table>
+
+<br><br><br>
+
+<button><a href="/add">Apply Here</a></button>
